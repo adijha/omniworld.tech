@@ -244,8 +244,9 @@ p {
 #team .teams .team-member i {
   background: #7ab436;
   color: #fff;
-  padding: 0.5rem;
-  border-radius: 40%;
+  padding: 0.4rem;
+  border-radius: 43%;
+  margin: 0.3rem;
 }
 #team .teams .team-member i:hover {
   background: #93cb52;
@@ -256,7 +257,7 @@ p {
   height: 100vh;
 }
 #projects h2 {
-  text-align: center;
+  /* text-align: center; */
 
   padding-top: 18rem !important;
 }
@@ -265,17 +266,13 @@ p {
 
   text-align: center;
   margin-top: 4rem;
-  /* padding: 2rem ; */
-  /* margin: 1rem ; */
 }
 #projects .project a {
   flex: 1;
   margin-top: 4rem;
 }
 #projects .btn {
-  display: block;
-  text-align: center;
-  margin: auto 850px;
+  margin: auto 45%;
   margin-top: 4rem;
 }
 
@@ -283,50 +280,41 @@ p {
   grid-area: contact-btn;
   display: inline-block;
   color: #fff;
-  background: #93cb52;
+  background: #7ab436;
   padding: 0.5rem 2rem;
   border: none;
   border-radius: 5px;
   margin: auto 55rem;
 }
 .contact-button:hover {
-  background: #7ab436;
+  background: #93cb52;
 }
 
 /* Section: Contact */
 #contact {
   height: 100vh;
-  display: grid;
-  grid-template-areas:
-    "c-form g-map"
-    "p-footer p-footer";
+  display: block;
+
   grid-gap: 2rem;
   margin: 0 3rem;
 
   margin-bottom: 0;
 }
-#contact .contact-form {
+#contact .m-heading{
   margin-top: 10rem !important;
-  grid-area: c-form;
+
+}
+#contact .contact-form {
 
   line-height: 2.5rem;
   margin-right: 0;
 }
 
-#contact .map {
-  margin-top: 13rem !important;
-  grid-area: g-map;
-  /* margin-top: 2rem; */
-  margin-bottom: 6.16rem;
-  border-radius: 4px;
-}
-
 #contact footer {
-  grid-area: p-footer;
   text-align: center;
   background: #222;
   /* padding: 1rem; */
-  padding-bottom: -2rem !important;
+  padding: 1rem !important;
   font-size: 1.2rem;
 }
 
