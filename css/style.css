@@ -121,6 +121,9 @@ p {
 .p-3 {
   padding: 3rem;
 }
+h2 {
+  color: #fff;
+}
 
 .btn {
   display: inline-block;
@@ -128,8 +131,10 @@ p {
   background: #93cb52;
   padding: 1.1rem 2rem;
   border: none;
-  border-radius: 5px;
-  font-size: 1.4rem !important;
+  border-radius: 50px;
+  font-size: 1.6rem !important;
+  font-weight: 800;
+  letter-spacing: 1px;
 }
 
 .btn:hover {
@@ -242,14 +247,14 @@ p {
   /* margin-bottom: 1rem; */
 }
 #team .teams .team-member i {
-  background: #7ab436;
+  /* background: #ced6c5; */
   color: #fff;
-  padding: 0.4rem;
+  padding: 0.1rem;
   border-radius: 43%;
   margin: 0.3rem;
 }
 #team .teams .team-member i:hover {
-  background: #93cb52;
+  transform: scale(1.3);
 }
 
 /* project section */
@@ -271,21 +276,11 @@ p {
   flex: 1;
   margin-top: 4rem;
 }
-#projects .btn {
-  margin: auto 45%;
-  margin-top: 4rem;
+.contactBtn {
+  margin-top: 3rem;
+  text-align: center;
 }
 
-.contact-button {
-  grid-area: contact-btn;
-  display: inline-block;
-  color: #fff;
-  background: #7ab436;
-  padding: 0.5rem 2rem;
-  border: none;
-  border-radius: 5px;
-  margin: auto 55rem;
-}
 .contact-button:hover {
   background: #93cb52;
 }
@@ -293,41 +288,42 @@ p {
 /* Section: Contact */
 #contact {
   height: 100vh;
-  display: block;
-
-  grid-gap: 2rem;
-  margin: 0 3rem;
-
   margin-bottom: 0;
+  text-align: center;
 }
-#contact .m-heading{
+#contact .m-heading {
   margin-top: 10rem !important;
-
 }
 #contact .contact-form {
-
-  line-height: 2.5rem;
-  margin-right: 0;
+  line-height: 3rem;
+  /* margin-right: 0; */
 }
 
 #contact footer {
   text-align: center;
   background: #222;
-  /* padding: 1rem; */
+  margin-top: 14.3rem;
   padding: 1rem !important;
   font-size: 1.2rem;
 }
 
-#contact .contact-form label {
-  display: inline;
+#contact .contact-form input {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 4px;
+  margin: 0.5rem;
+}
+::placeholder {
+  color: #7ab436;
+  font-size: 1rem;
+}
+#contact .contact-form #message {
+  width: 100%;
+  padding: 4rem auto !important;
 }
 
-#contact .contact-form input,
-#contact .contact-form textarea {
-  width: 100%;
-  padding: 0.5rem;
-}
-#contact .contact-form textarea {
-  width: 100%;
-  padding: 2rem;
+.sendBtn {
+  margin-top: 3% !important;
+  width: 15% !important;
+  border-radius: 60px !important;
 }
